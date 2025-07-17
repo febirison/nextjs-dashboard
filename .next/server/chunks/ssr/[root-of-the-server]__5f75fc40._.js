@@ -129,6 +129,7 @@ async function createInvoice(prevState, formData) {
       VALUES (${customerId}, ${amountInCents}, ${status}, ${date})
     `;
     } catch (error) {
+        console.error('Database Error:', error);
         return {
             message: 'Database Error: Failed to Create Invoice.'
         };
@@ -157,6 +158,7 @@ async function updateInvoice(id, prevState, formData) {
       WHERE id = ${id}
     `;
     } catch (error) {
+        console.error('Database Error:', error);
         return {
             message: 'Database Error: Failed to Update Invoice.'
         };
