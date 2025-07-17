@@ -9,18 +9,12 @@ export const metadata: Metadata = {
 export default async function Page({
   searchParams,
 }: {
-  // Correctly type searchParams as a Promise
-  searchParams?: Promise<{
+  searchParams?: {
     query?: string;
     page?: string;
-  } | undefined>; // Or simply Promise<Record<string, string | string[] | undefined>>
+  };
 }) {
-  // Await the searchParams Promise to get the actual object
-  const resolvedSearchParams = await searchParams;
-
-  const query = resolvedSearchParams?.query || '';
-  // const currentPage = Number(resolvedSearchParams?.page) || 1; // If you also use page
-
+  const query = searchParams?.query || '';
   const customers = await fetchFilteredCustomers(query);
   return (
     <main>
