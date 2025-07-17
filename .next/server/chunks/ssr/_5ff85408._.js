@@ -772,6 +772,8 @@ const metadata = {
     title: 'Customers'
 };
 async function Page({ searchParams }) {
+    const actualSearchParams = searchParams && 'then' in searchParams ? await searchParams // If it's a promise, await it
+     : searchParams;
     const query = searchParams?.query || '';
     const customers = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$lib$2f$data$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["fetchFilteredCustomers"])(query);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$3$2e$2_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -779,12 +781,12 @@ async function Page({ searchParams }) {
             customers: customers
         }, void 0, false, {
             fileName: "[project]/app/dashboard/customers/page.tsx",
-            lineNumber: 21,
+            lineNumber: 25,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/dashboard/customers/page.tsx",
-        lineNumber: 20,
+        lineNumber: 24,
         columnNumber: 5
     }, this);
 }
