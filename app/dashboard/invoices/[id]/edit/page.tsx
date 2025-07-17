@@ -9,19 +9,27 @@ import { fetchInvoicesPages } from '@/app/lib/data';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Invoices',
+  title: 'Invoices', // This title might be incorrect for an edit page
 };
 
 export default async function Page({
   searchParams,
+  // If this is truly a dynamic route, it should also accept 'params':
+  // params, // e.g., params: { id: string }
 }: {
-  searchParams?: {
+  // Correctly type searchParams as a Promise for Next.js 15
+  searchParams?: Promise<{
     query?: string;
     page?: string;
-  };
+  } | undefined>;
+  // If this is a dynamic route, you'd also have params here:
+  // params?: Promise<{ id: string }>;
 }) {
-  const query = searchParams?.query || '';
-  const currentPage = Number(searchParams?.page) || 1;
+  // Await the searchParams Promise to get the actual object
+  const resolvedSearchParams = await searchParams;
+
+  const query = resolvedSearchParams?.query || '';
+  const currentPage = Number(resolvedSearchParams?.page) || 1;
   const totalPages = await fetchInvoicesPages(query);
 
   return (
