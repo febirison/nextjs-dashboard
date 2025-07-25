@@ -3,19 +3,17 @@ module.exports = {
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/cookie.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "SessionStore": (()=>SessionStore),
-    "defaultCookies": (()=>defaultCookies)
+    "SessionStore": ()=>SessionStore,
+    "defaultCookies": ()=>defaultCookies
 });
-var __classPrivateFieldSet = this && this.__classPrivateFieldSet || function(receiver, state, value, kind, f) {
+var __classPrivateFieldSet = ("TURBOPACK compile-time value", void 0) && ("TURBOPACK compile-time value", void 0).__classPrivateFieldSet || function(receiver, state, value, kind, f) {
     if (kind === "m") throw new TypeError("Private method is not writable");
     if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
     if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
     return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
 };
-var __classPrivateFieldGet = this && this.__classPrivateFieldGet || function(receiver, state, kind, f) {
+var __classPrivateFieldGet = ("TURBOPACK compile-time value", void 0) && ("TURBOPACK compile-time value", void 0).__classPrivateFieldGet || function(receiver, state, kind, f) {
     if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
     if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
@@ -211,53 +209,51 @@ _SessionStore_chunks = new WeakMap(), _SessionStore_option = new WeakMap(), _Ses
     }
     return cleanedChunks;
 };
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 /**
  * Base error class for all Auth.js errors.
  * It's optimized to be printed in the server logs in a nicely formatted way
  * via the [`logger.error`](https://authjs.dev/reference/core#logger) option.
  * @noInheritDoc
  */ __turbopack_context__.s({
-    "AccessDenied": (()=>AccessDenied),
-    "AccountNotLinked": (()=>AccountNotLinked),
-    "AdapterError": (()=>AdapterError),
-    "AuthError": (()=>AuthError),
-    "CallbackRouteError": (()=>CallbackRouteError),
-    "CredentialsSignin": (()=>CredentialsSignin),
-    "DuplicateConditionalUI": (()=>DuplicateConditionalUI),
-    "EmailSignInError": (()=>EmailSignInError),
-    "ErrorPageLoop": (()=>ErrorPageLoop),
-    "EventError": (()=>EventError),
-    "ExperimentalFeatureNotEnabled": (()=>ExperimentalFeatureNotEnabled),
-    "InvalidCallbackUrl": (()=>InvalidCallbackUrl),
-    "InvalidCheck": (()=>InvalidCheck),
-    "InvalidEndpoints": (()=>InvalidEndpoints),
-    "InvalidProvider": (()=>InvalidProvider),
-    "JWTSessionError": (()=>JWTSessionError),
-    "MissingAdapter": (()=>MissingAdapter),
-    "MissingAdapterMethods": (()=>MissingAdapterMethods),
-    "MissingAuthorize": (()=>MissingAuthorize),
-    "MissingCSRF": (()=>MissingCSRF),
-    "MissingSecret": (()=>MissingSecret),
-    "MissingWebAuthnAutocomplete": (()=>MissingWebAuthnAutocomplete),
-    "OAuthAccountNotLinked": (()=>OAuthAccountNotLinked),
-    "OAuthCallbackError": (()=>OAuthCallbackError),
-    "OAuthProfileParseError": (()=>OAuthProfileParseError),
-    "OAuthSignInError": (()=>OAuthSignInError),
-    "SessionTokenError": (()=>SessionTokenError),
-    "SignInError": (()=>SignInError),
-    "SignOutError": (()=>SignOutError),
-    "UnknownAction": (()=>UnknownAction),
-    "UnsupportedStrategy": (()=>UnsupportedStrategy),
-    "UntrustedHost": (()=>UntrustedHost),
-    "Verification": (()=>Verification),
-    "WebAuthnVerificationError": (()=>WebAuthnVerificationError),
-    "isClientError": (()=>isClientError)
+    "AccessDenied": ()=>AccessDenied,
+    "AccountNotLinked": ()=>AccountNotLinked,
+    "AdapterError": ()=>AdapterError,
+    "AuthError": ()=>AuthError,
+    "CallbackRouteError": ()=>CallbackRouteError,
+    "CredentialsSignin": ()=>CredentialsSignin,
+    "DuplicateConditionalUI": ()=>DuplicateConditionalUI,
+    "EmailSignInError": ()=>EmailSignInError,
+    "ErrorPageLoop": ()=>ErrorPageLoop,
+    "EventError": ()=>EventError,
+    "ExperimentalFeatureNotEnabled": ()=>ExperimentalFeatureNotEnabled,
+    "InvalidCallbackUrl": ()=>InvalidCallbackUrl,
+    "InvalidCheck": ()=>InvalidCheck,
+    "InvalidEndpoints": ()=>InvalidEndpoints,
+    "InvalidProvider": ()=>InvalidProvider,
+    "JWTSessionError": ()=>JWTSessionError,
+    "MissingAdapter": ()=>MissingAdapter,
+    "MissingAdapterMethods": ()=>MissingAdapterMethods,
+    "MissingAuthorize": ()=>MissingAuthorize,
+    "MissingCSRF": ()=>MissingCSRF,
+    "MissingSecret": ()=>MissingSecret,
+    "MissingWebAuthnAutocomplete": ()=>MissingWebAuthnAutocomplete,
+    "OAuthAccountNotLinked": ()=>OAuthAccountNotLinked,
+    "OAuthCallbackError": ()=>OAuthCallbackError,
+    "OAuthProfileParseError": ()=>OAuthProfileParseError,
+    "OAuthSignInError": ()=>OAuthSignInError,
+    "SessionTokenError": ()=>SessionTokenError,
+    "SignInError": ()=>SignInError,
+    "SignOutError": ()=>SignOutError,
+    "UnknownAction": ()=>UnknownAction,
+    "UnsupportedStrategy": ()=>UnsupportedStrategy,
+    "UntrustedHost": ()=>UntrustedHost,
+    "Verification": ()=>Verification,
+    "WebAuthnVerificationError": ()=>WebAuthnVerificationError,
+    "isClientError": ()=>isClientError
 });
 class AuthError extends Error {
     /** @internal */ constructor(message, errorOptions){
@@ -417,14 +413,12 @@ AccountNotLinked.type = "AccountNotLinked";
 class ExperimentalFeatureNotEnabled extends AuthError {
 }
 ExperimentalFeatureNotEnabled.type = "ExperimentalFeatureNotEnabled";
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/assert.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "assertConfig": (()=>assertConfig)
+    "assertConfig": ()=>assertConfig
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$cookie$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/cookie.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
@@ -570,12 +564,10 @@ function assertConfig(request, options) {
     if (!warned) warned = true;
     return warnings;
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/vendored/cookie.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 /**
  * @source https://github.com/jshttp/cookie
  * @author blakeembrey
@@ -594,8 +586,8 @@ var { g: global, __dirname } = __turbopack_context__;
  *                     "*" / "+" / "-" / "." / "^" / "_" /
  *                     "`" / "|" / "~" / DIGIT / ALPHA
  */ __turbopack_context__.s({
-    "parse": (()=>parse),
-    "serialize": (()=>serialize)
+    "parse": ()=>parse,
+    "serialize": ()=>serialize
 });
 const cookieNameRegExp = /^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$/;
 /**
@@ -782,12 +774,10 @@ function serialize(name, val, options) {
  */ function isDate(val) {
     return __toString.call(val) === "[object Date]";
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/jwt.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 /**
  *
  *
@@ -825,9 +815,9 @@ var { g: global, __dirname } = __turbopack_context__;
  *
  * @module jwt
  */ __turbopack_context__.s({
-    "decode": (()=>decode),
-    "encode": (()=>encode),
-    "getToken": (()=>getToken)
+    "decode": ()=>decode,
+    "encode": ()=>encode,
+    "getToken": ()=>getToken
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$panva$2b$hkdf$40$1$2e$2$2e$1$2f$node_modules$2f40$panva$2f$hkdf$2f$dist$2f$node$2f$esm$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@panva+hkdf@1.2.1/node_modules/@panva/hkdf/dist/node/esm/index.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$jose$40$6$2e$0$2e$12$2f$node_modules$2f$jose$2f$dist$2f$webapi$2f$jwt$2f$encrypt$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/jose@6.0.12/node_modules/jose/dist/webapi/jwt/encrypt.js [app-rsc] (ecmascript)");
@@ -936,17 +926,15 @@ async function getDerivedEncryptionKey(enc, keyMaterial, salt) {
     }
     return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$panva$2b$hkdf$40$1$2e$2$2e$1$2f$node_modules$2f40$panva$2f$hkdf$2f$dist$2f$node$2f$esm$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["hkdf"])("sha256", keyMaterial, salt, `Auth.js Generated Encryption Key (${salt})`, length);
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/callback-url.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 /**
  * Get callback URL based on query param / cookie + validation,
  * and add it to `req.options.callbackUrl`.
  */ __turbopack_context__.s({
-    "createCallbackUrl": (()=>createCallbackUrl)
+    "createCallbackUrl": ()=>createCallbackUrl
 });
 async function createCallbackUrl({ options, paramValue, cookieValue }) {
     const { url, callbacks } = options;
@@ -970,14 +958,12 @@ async function createCallbackUrl({ options, paramValue, cookieValue }) {
         callbackUrlCookie: callbackUrl !== cookieValue ? callbackUrl : undefined
     };
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/logger.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "setLogger": (()=>setLogger)
+    "setLogger": ()=>setLogger
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
 ;
@@ -1017,14 +1003,12 @@ function setLogger(config) {
     config.logger ?? (config.logger = newLogger);
     return newLogger;
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/actions.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "isAuthAction": (()=>isAuthAction)
+    "isAuthAction": ()=>isAuthAction
 });
 const actions = [
     "providers",
@@ -1040,19 +1024,17 @@ const actions = [
 function isAuthAction(action) {
     return actions.includes(action);
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/web.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "createHash": (()=>createHash),
-    "parseActionAndProviderId": (()=>parseActionAndProviderId),
-    "randomString": (()=>randomString),
-    "toInternalRequest": (()=>toInternalRequest),
-    "toRequest": (()=>toRequest),
-    "toResponse": (()=>toResponse)
+    "createHash": ()=>createHash,
+    "parseActionAndProviderId": ()=>parseActionAndProviderId,
+    "randomString": ()=>randomString,
+    "toInternalRequest": ()=>toInternalRequest,
+    "toRequest": ()=>toRequest,
+    "toResponse": ()=>toResponse
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$vendored$2f$cookie$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/vendored/cookie.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
@@ -1152,15 +1134,13 @@ function parseActionAndProviderId(pathname, base) {
         providerId: providerId == "undefined" ? undefined : providerId
     };
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/callback/oauth/csrf-token.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "createCSRFToken": (()=>createCSRFToken),
-    "validateCSRF": (()=>validateCSRF)
+    "createCSRFToken": ()=>createCSRFToken,
+    "validateCSRF": ()=>validateCSRF
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$web$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/web.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
@@ -1194,14 +1174,12 @@ function validateCSRF(action, verified) {
     if (verified) return;
     throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["MissingCSRF"](`CSRF token was missing during an action ${action}`);
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/merge.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "merge": (()=>merge)
+    "merge": ()=>merge
 });
 function isObject(item) {
     return item !== null && typeof item === "object";
@@ -1219,12 +1197,10 @@ function merge(target, ...sources) {
     }
     return merge(target, ...sources);
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/symbols.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 /**
  * :::danger
  * This option is intended for framework authors.
@@ -1234,26 +1210,24 @@ var { g: global, __dirname } = __turbopack_context__;
  * if you are implementing a framework that is already protected against CSRF attacks, you can skip this check by
  * passing this value to {@link AuthConfig.skipCSRFCheck}.
  */ __turbopack_context__.s({
-    "conformInternal": (()=>conformInternal),
-    "customFetch": (()=>customFetch),
-    "raw": (()=>raw),
-    "skipCSRFCheck": (()=>skipCSRFCheck)
+    "conformInternal": ()=>conformInternal,
+    "customFetch": ()=>customFetch,
+    "raw": ()=>raw,
+    "skipCSRFCheck": ()=>skipCSRFCheck
 });
 const skipCSRFCheck = Symbol("skip-csrf-check");
 const raw = Symbol("return-type-raw");
 const customFetch = Symbol("custom-fetch");
 const conformInternal = Symbol("conform-internal");
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/providers.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "default": (()=>parseProviders),
-    "isOAuth2Provider": (()=>isOAuth2Provider),
-    "isOAuthProvider": (()=>isOAuthProvider),
-    "isOIDCProvider": (()=>isOIDCProvider)
+    "default": ()=>parseProviders,
+    "isOAuth2Provider": ()=>isOAuth2Provider,
+    "isOAuthProvider": ()=>isOAuthProvider,
+    "isOIDCProvider": ()=>isOIDCProvider
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$merge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/merge.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$symbols$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/symbols.js [app-rsc] (ecmascript)");
@@ -1403,15 +1377,13 @@ function isOAuth2Provider(provider) {
 function isOAuthProvider(provider) {
     return provider.type === "oauth" || provider.type === "oidc";
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/init.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "defaultCallbacks": (()=>defaultCallbacks),
-    "init": (()=>init)
+    "defaultCallbacks": ()=>defaultCallbacks,
+    "init": ()=>init
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$jwt$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/jwt.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$callback$2d$url$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/callback-url.js [app-rsc] (ecmascript)");
@@ -1487,7 +1459,7 @@ async function init({ authOptions: config, providerId, action, url, cookies: req
         action,
         // @ts-expect-errors
         provider,
-        cookies: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$merge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["merge"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$cookie$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["defaultCookies"])(config.useSecureCookies ?? url.protocol === "https:"), config.cookies),
+        cookies: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$merge$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["merge"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$cookie$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["defaultCookies"](config.useSecureCookies ?? url.protocol === "https:"), config.cookies),
         providers,
         // Session options
         session: {
@@ -1592,14 +1564,12 @@ async function init({ authOptions: config, providerId, action, url, cookies: req
         return acc;
     }, {});
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/pages/error.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "default": (()=>ErrorPage)
+    "default": ()=>ErrorPage
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$preact$40$10$2e$24$2e$3$2f$node_modules$2f$preact$2f$jsx$2d$runtime$2f$dist$2f$jsxRuntime$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/preact@10.24.3/node_modules/preact/jsx-runtime/dist/jsxRuntime.mjs [app-rsc] (ecmascript) <module evaluation>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$preact$40$10$2e$24$2e$3$2f$node_modules$2f$preact$2f$jsx$2d$runtime$2f$dist$2f$jsxRuntime$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/preact@10.24.3/node_modules/preact/jsx-runtime/dist/jsxRuntime.mjs [app-rsc] (ecmascript) <locals>");
@@ -1708,12 +1678,10 @@ function ErrorPage(props) {
         })
     };
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/webauthn-client.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 //@ts-check
 // Declare a SimpleWebAuthnBrowser variable as part of "window"
 /** @typedef {"authenticate"} WebAuthnAuthenticate */ /** @typedef {"register"} WebAuthnRegister */ /** @typedef {WebAuthnRegister | WebAuthnAuthenticate} WebAuthnOptionsAction */ /**
@@ -1730,7 +1698,7 @@ var { g: global, __dirname } = __turbopack_context__;
  * @param {string} authURL is the URL of the auth API
  * @param {string} providerID is the ID of the webauthn provider
  */ __turbopack_context__.s({
-    "webauthnScript": (()=>webauthnScript)
+    "webauthnScript": ()=>webauthnScript
 });
 async function webauthnScript(authURL, providerID) {
     /** @type {typeof import("@simplewebauthn/browser")} */ // @ts-ignore
@@ -1891,14 +1859,12 @@ async function webauthnScript(authURL, providerID) {
     setupForm();
     autofillAuthentication();
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/pages/signin.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "default": (()=>SigninPage)
+    "default": ()=>SigninPage
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$preact$40$10$2e$24$2e$3$2f$node_modules$2f$preact$2f$jsx$2d$runtime$2f$dist$2f$jsxRuntime$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/preact@10.24.3/node_modules/preact/jsx-runtime/dist/jsxRuntime.mjs [app-rsc] (ecmascript) <module evaluation>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$preact$40$10$2e$24$2e$3$2f$node_modules$2f$preact$2f$jsx$2d$runtime$2f$dist$2f$jsxRuntime$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/preact@10.24.3/node_modules/preact/jsx-runtime/dist/jsxRuntime.mjs [app-rsc] (ecmascript) <locals>");
@@ -2150,14 +2116,12 @@ function SigninPage(props) {
         ]
     });
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/pages/signout.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "default": (()=>SignoutPage)
+    "default": ()=>SignoutPage
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$preact$40$10$2e$24$2e$3$2f$node_modules$2f$preact$2f$jsx$2d$runtime$2f$dist$2f$jsxRuntime$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/preact@10.24.3/node_modules/preact/jsx-runtime/dist/jsxRuntime.mjs [app-rsc] (ecmascript) <module evaluation>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$preact$40$10$2e$24$2e$3$2f$node_modules$2f$preact$2f$jsx$2d$runtime$2f$dist$2f$jsxRuntime$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/preact@10.24.3/node_modules/preact/jsx-runtime/dist/jsxRuntime.mjs [app-rsc] (ecmascript) <locals>");
@@ -2220,15 +2184,13 @@ function SignoutPage(props) {
         ]
     });
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/pages/styles.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 // Generated by `pnpm css`
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": ()=>__TURBOPACK__default__export__
 });
 const __TURBOPACK__default__export__ = `:root {
   --border-width: 1px;
@@ -2610,14 +2572,12 @@ a.site:hover {
   }
 }
 `;
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/pages/verify-request.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "default": (()=>VerifyRequestPage)
+    "default": ()=>VerifyRequestPage
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$preact$40$10$2e$24$2e$3$2f$node_modules$2f$preact$2f$jsx$2d$runtime$2f$dist$2f$jsxRuntime$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/preact@10.24.3/node_modules/preact/jsx-runtime/dist/jsxRuntime.mjs [app-rsc] (ecmascript) <module evaluation>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$preact$40$10$2e$24$2e$3$2f$node_modules$2f$preact$2f$jsx$2d$runtime$2f$dist$2f$jsxRuntime$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/preact@10.24.3/node_modules/preact/jsx-runtime/dist/jsxRuntime.mjs [app-rsc] (ecmascript) <locals>");
@@ -2662,14 +2622,12 @@ function VerifyRequestPage(props) {
         ]
     });
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/pages/index.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "default": (()=>renderPage)
+    "default": ()=>renderPage
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$preact$2d$render$2d$to$2d$string$40$6$2e$5$2e$11_preact$40$10$2e$24$2e$3$2f$node_modules$2f$preact$2d$render$2d$to$2d$string$2f$dist$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/preact-render-to-string@6.5.11_preact@10.24.3/node_modules/preact-render-to-string/dist/index.mjs [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$pages$2f$error$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/pages/error.js [app-rsc] (ecmascript)");
@@ -2842,30 +2800,26 @@ function renderPage(params) {
         }
     };
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/date.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 /**
  * Takes a number in seconds and returns the date in the future.
  * Optionally takes a second date parameter. In that case
  * the date in the future will be calculated from that date instead of now.
  */ __turbopack_context__.s({
-    "fromDate": (()=>fromDate)
+    "fromDate": ()=>fromDate
 });
 function fromDate(time, date = Date.now()) {
     return new Date(date + time * 1000);
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/callback/handle-login.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "handleLoginOrRegister": (()=>handleLoginOrRegister)
+    "handleLoginOrRegister": ()=>handleLoginOrRegister
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$date$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/date.js [app-rsc] (ecmascript)");
@@ -3220,17 +3174,15 @@ async function handleLoginOrRegister(sessionToken, _profile, _account, options) 
         };
     }
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/callback/oauth/checks.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "nonce": (()=>nonce),
-    "pkce": (()=>pkce),
-    "state": (()=>state),
-    "webauthnChallenge": (()=>webauthnChallenge)
+    "nonce": ()=>nonce,
+    "pkce": ()=>pkce,
+    "state": ()=>state,
+    "webauthnChallenge": ()=>webauthnChallenge
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/oauth4webapi@3.5.1/node_modules/oauth4webapi/build/index.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
@@ -3319,8 +3271,8 @@ function useCookie(check, name) {
 }
 const pkce = {
     /** Creates a PKCE code challenge and verifier pair. The verifier in stored in the cookie. */ async create (options) {
-        const code_verifier = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["generateRandomCodeVerifier"])();
-        const value = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["calculatePKCECodeChallenge"])(code_verifier);
+        const code_verifier = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["generateRandomCodeVerifier"]();
+        const value = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["calculatePKCECodeChallenge"](code_verifier);
         const cookie = await sealCookie("pkceCodeVerifier", code_verifier, options);
         return {
             cookie,
@@ -3347,7 +3299,7 @@ const state = {
         // IDEA: Allow the user to pass data to be stored in the state
         const payload = {
             origin,
-            random: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["generateRandomState"])()
+            random: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["generateRandomState"]()
         };
         const value = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$jwt$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["encode"])({
             secret: options.jwt.secret,
@@ -3388,7 +3340,7 @@ const state = {
 const nonce = {
     async create (options) {
         if (!options.provider.checks.includes("nonce")) return;
-        const value = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["generateRandomNonce"])();
+        const value = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["generateRandomNonce"]();
         const cookie = await sealCookie("nonce", value, options);
         return {
             cookie,
@@ -3433,15 +3385,13 @@ const webauthnChallenge = {
         return payload;
     }
 };
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/callback/oauth/callback.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "getUserAndAccount": (()=>getUserAndAccount),
-    "handleOAuth": (()=>handleOAuth)
+    "getUserAndAccount": ()=>getUserAndAccount,
+    "handleOAuth": ()=>handleOAuth
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$oauth$2f$checks$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/callback/oauth/checks.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/oauth4webapi@3.5.1/node_modules/oauth4webapi/build/index.js [app-rsc] (ecmascript)");
@@ -3475,11 +3425,11 @@ async function handleOAuth(params, cookies, options) {
     if ((!token?.url || token.url.host === "authjs.dev") && (!userinfo?.url || userinfo.url.host === "authjs.dev")) {
         // We assume that issuer is always defined as this has been asserted earlier
         const issuer = new URL(provider.issuer);
-        const discoveryResponse = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["discoveryRequest"])(issuer, {
+        const discoveryResponse = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["discoveryRequest"](issuer, {
             [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["allowInsecureRequests"]]: true,
             [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["customFetch"]]: provider[__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$symbols$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["customFetch"]]
         });
-        as = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["processDiscoveryResponse"])(issuer, discoveryResponse);
+        as = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["processDiscoveryResponse"](issuer, discoveryResponse);
         if (!as.token_endpoint) throw new TypeError("TODO: Authorization server did not provide a token endpoint.");
         if (!as.userinfo_endpoint) throw new TypeError("TODO: Authorization server did not provide a userinfo endpoint.");
     } else {
@@ -3504,13 +3454,13 @@ async function handleOAuth(params, cookies, options) {
             };
             break;
         case "client_secret_post":
-            clientAuth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ClientSecretPost"])(provider.clientSecret);
+            clientAuth = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ClientSecretPost"](provider.clientSecret);
             break;
         case "client_secret_jwt":
-            clientAuth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ClientSecretJwt"])(provider.clientSecret);
+            clientAuth = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ClientSecretJwt"](provider.clientSecret);
             break;
         case "private_key_jwt":
-            clientAuth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["PrivateKeyJwt"])(provider.token.clientPrivateKey, {
+            clientAuth = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["PrivateKeyJwt"](provider.token.clientPrivateKey, {
                 // TODO: review in the next breaking change
                 [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["modifyAssertion"]] (_header, payload) {
                     payload.aud = [
@@ -3521,7 +3471,7 @@ async function handleOAuth(params, cookies, options) {
             });
             break;
         case "none":
-            clientAuth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["None"])();
+            clientAuth = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["None"]();
             break;
         default:
             throw new Error("unsupported client authentication method");
@@ -3530,7 +3480,7 @@ async function handleOAuth(params, cookies, options) {
     const state = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$oauth$2f$checks$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["state"].use(cookies, resCookies, options);
     let codeGrantParams;
     try {
-        codeGrantParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["validateAuthResponse"])(as, client, new URLSearchParams(params), provider.checks.includes("state") ? state : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["skipStateCheck"]);
+        codeGrantParams = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["validateAuthResponse"](as, client, new URLSearchParams(params), provider.checks.includes("state") ? state : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["skipStateCheck"]);
     } catch (err) {
         if (err instanceof __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["AuthorizationResponseError"]) {
             const cause = {
@@ -3547,7 +3497,7 @@ async function handleOAuth(params, cookies, options) {
     if (!options.isOnRedirectProxy && provider.redirectProxyUrl) {
         redirect_uri = provider.redirectProxyUrl;
     }
-    let codeGrantResponse = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["authorizationCodeGrantRequest"])(as, client, clientAuth, codeGrantParams, redirect_uri, codeVerifier ?? "decoy", {
+    let codeGrantResponse = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["authorizationCodeGrantRequest"](as, client, clientAuth, codeGrantParams, redirect_uri, codeVerifier ?? "decoy", {
         // TODO: move away from allowing insecure HTTP requests
         [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["allowInsecureRequests"]]: true,
         [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["customFetch"]]: (...args)=>{
@@ -3585,10 +3535,10 @@ async function handleOAuth(params, cookies, options) {
                         const tenantRe = /microsoftonline\.com\/(\w+)\/v2\.0/;
                         const tenantId = as.issuer?.match(tenantRe)?.[1] ?? "common";
                         const issuer = new URL(as.issuer.replace(tenantId, tid));
-                        const discoveryResponse = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["discoveryRequest"])(issuer, {
+                        const discoveryResponse = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["discoveryRequest"](issuer, {
                             [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["customFetch"]]: provider[__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$symbols$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["customFetch"]]
                         });
-                        as = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["processDiscoveryResponse"])(issuer, discoveryResponse);
+                        as = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["processDiscoveryResponse"](issuer, discoveryResponse);
                     }
                     break;
                 }
@@ -3596,13 +3546,13 @@ async function handleOAuth(params, cookies, options) {
                 break;
         }
     }
-    const processedCodeResponse = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["processAuthorizationCodeResponse"])(as, client, codeGrantResponse, {
+    const processedCodeResponse = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["processAuthorizationCodeResponse"](as, client, codeGrantResponse, {
         expectedNonce: await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$oauth$2f$checks$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["nonce"].use(cookies, resCookies, options),
         requireIdToken
     });
     const tokens = processedCodeResponse;
     if (requireIdToken) {
-        const idTokenClaims = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getValidatedIdTokenClaims"])(processedCodeResponse);
+        const idTokenClaims = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getValidatedIdTokenClaims"](processedCodeResponse);
         profile = idTokenClaims;
         // Apple sends some of the user information in a `user` parameter as a stringified JSON.
         // It also only does so the first time the user consents to share their information.
@@ -3612,12 +3562,12 @@ async function handleOAuth(params, cookies, options) {
             } catch  {}
         }
         if (provider.idToken === false) {
-            const userinfoResponse = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["userInfoRequest"])(as, client, processedCodeResponse.access_token, {
+            const userinfoResponse = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["userInfoRequest"](as, client, processedCodeResponse.access_token, {
                 [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["customFetch"]]: provider[__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$symbols$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["customFetch"]],
                 // TODO: move away from allowing insecure HTTP requests
                 [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["allowInsecureRequests"]]: true
             });
-            profile = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["processUserInfoResponse"])(as, client, idTokenClaims.sub, userinfoResponse);
+            profile = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["processUserInfoResponse"](as, client, idTokenClaims.sub, userinfoResponse);
         }
     } else {
         if (userinfo?.request) {
@@ -3627,7 +3577,7 @@ async function handleOAuth(params, cookies, options) {
             });
             if (_profile instanceof Object) profile = _profile;
         } else if (userinfo?.url) {
-            const userinfoResponse = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["userInfoRequest"])(as, client, processedCodeResponse.access_token, {
+            const userinfoResponse = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["userInfoRequest"](as, client, processedCodeResponse.access_token, {
                 [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["customFetch"]]: provider[__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$symbols$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["customFetch"]],
                 // TODO: move away from allowing insecure HTTP requests
                 [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["allowInsecureRequests"]]: true
@@ -3681,23 +3631,21 @@ async function getUserAndAccount(OAuthProfile, provider, tokens, logger) {
         }));
     }
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/webauthn-utils.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "assertInternalOptionsWebAuthn": (()=>assertInternalOptionsWebAuthn),
-    "fromBase64": (()=>fromBase64),
-    "getAuthenticationResponse": (()=>getAuthenticationResponse),
-    "getRegistrationResponse": (()=>getRegistrationResponse),
-    "inferWebAuthnOptions": (()=>inferWebAuthnOptions),
-    "stringToTransports": (()=>stringToTransports),
-    "toBase64": (()=>toBase64),
-    "transportsToString": (()=>transportsToString),
-    "verifyAuthenticate": (()=>verifyAuthenticate),
-    "verifyRegister": (()=>verifyRegister)
+    "assertInternalOptionsWebAuthn": ()=>assertInternalOptionsWebAuthn,
+    "fromBase64": ()=>fromBase64,
+    "getAuthenticationResponse": ()=>getAuthenticationResponse,
+    "getRegistrationResponse": ()=>getRegistrationResponse,
+    "inferWebAuthnOptions": ()=>inferWebAuthnOptions,
+    "stringToTransports": ()=>stringToTransports,
+    "toBase64": ()=>toBase64,
+    "transportsToString": ()=>transportsToString,
+    "verifyAuthenticate": ()=>verifyAuthenticate,
+    "verifyRegister": ()=>verifyRegister
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$oauth$2f$checks$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/callback/oauth/checks.js [app-rsc] (ecmascript)");
@@ -4002,15 +3950,13 @@ function transportsToString(transports) {
 function stringToTransports(tstring) {
     return tstring ? tstring.split(",") : undefined;
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/callback/index.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 // TODO: Make this file smaller
 __turbopack_context__.s({
-    "callback": (()=>callback)
+    "callback": ()=>callback
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$handle$2d$login$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/callback/handle-login.js [app-rsc] (ecmascript)");
@@ -4480,14 +4426,12 @@ async function handleAuthorized(params, config) {
         baseUrl: config.url.origin
     });
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/session.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "session": (()=>session)
+    "session": ()=>session
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$date$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/date.js [app-rsc] (ecmascript)");
@@ -4635,14 +4579,12 @@ async function session(options, sessionStore, cookies, isUpdate, newSession) {
     }
     return response;
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/signin/authorization-url.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "getAuthorizationUrl": (()=>getAuthorizationUrl)
+    "getAuthorizationUrl": ()=>getAuthorizationUrl
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$oauth$2f$checks$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/callback/oauth/checks.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/oauth4webapi@3.5.1/node_modules/oauth4webapi/build/index.js [app-rsc] (ecmascript)");
@@ -4659,12 +4601,12 @@ async function getAuthorizationUrl(query, options) {
         // If url is undefined, we assume that issuer is always defined
         // We check this in assert.ts
         const issuer = new URL(provider.issuer);
-        const discoveryResponse = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["discoveryRequest"])(issuer, {
+        const discoveryResponse = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["discoveryRequest"](issuer, {
             [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["customFetch"]]: provider[__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$symbols$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["customFetch"]],
             // TODO: move away from allowing insecure HTTP requests
             [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["allowInsecureRequests"]]: true
         });
-        const as = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["processDiscoveryResponse"])(issuer, discoveryResponse).catch((error)=>{
+        const as = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$oauth4webapi$40$3$2e$5$2e$1$2f$node_modules$2f$oauth4webapi$2f$build$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["processDiscoveryResponse"](issuer, discoveryResponse).catch((error)=>{
             if (!(error instanceof TypeError) || error.message !== "Invalid URL") throw error;
             throw new TypeError(`Discovery request responded with an invalid issuer. expected: ${issuer}`);
         });
@@ -4740,14 +4682,12 @@ async function getAuthorizationUrl(query, options) {
         cookies
     };
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/signin/send-token.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "sendToken": (()=>sendToken)
+    "sendToken": ()=>sendToken
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$web$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/web.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
@@ -4836,14 +4776,12 @@ function defaultNormalizer(email) {
     domain = domain.split(",")[0];
     return `${local}@${domain}`;
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/signin/index.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "signIn": (()=>signIn)
+    "signIn": ()=>signIn
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$signin$2f$authorization$2d$url$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/signin/authorization-url.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$signin$2f$send$2d$token$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/signin/send-token.js [app-rsc] (ecmascript)");
@@ -4881,14 +4819,12 @@ async function signIn(request, cookies, options) {
             };
     }
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/signout.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "signOut": (()=>signOut)
+    "signOut": ()=>signOut
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
 ;
@@ -4925,16 +4861,14 @@ async function signOut(cookies, sessionStore, options) {
         cookies
     };
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/session.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 /**
  * Returns the currently logged in user, if any.
  */ __turbopack_context__.s({
-    "getLoggedInUser": (()=>getLoggedInUser)
+    "getLoggedInUser": ()=>getLoggedInUser
 });
 async function getLoggedInUser(options, sessionStore) {
     const { adapter, jwt, session: { strategy: sessionStrategy } } = options;
@@ -4964,14 +4898,12 @@ async function getLoggedInUser(options, sessionStore) {
     }
     return null;
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/webauthn-options.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "webAuthnOptions": (()=>webAuthnOptions)
+    "webAuthnOptions": ()=>webAuthnOptions
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$session$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/session.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$webauthn$2d$utils$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/webauthn-utils.js [app-rsc] (ecmascript)");
@@ -5029,12 +4961,10 @@ async function webAuthnOptions(request, options, sessionStore, cookies) {
             };
     }
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/index.js [app-rsc] (ecmascript) <locals>": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({});
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/callback/index.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$session$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/session.js [app-rsc] (ecmascript)");
@@ -5046,12 +4976,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$
 ;
 ;
 ;
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/index.js [app-rsc] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({});
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/callback/index.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$session$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/session.js [app-rsc] (ecmascript)");
@@ -5059,14 +4987,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$signout$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/signout.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$webauthn$2d$options$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/webauthn-options.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/index.js [app-rsc] (ecmascript) <locals>");
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/index.js [app-rsc] (ecmascript) <locals>": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "AuthInternal": (()=>AuthInternal)
+    "AuthInternal": ()=>AuthInternal
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$cookie$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/cookie.js [app-rsc] (ecmascript)");
@@ -5111,7 +5037,7 @@ async function AuthInternal(request, authOptions) {
         });
         switch(action){
             case "callback":
-                return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["callback"])(request, options, sessionStore, cookies);
+                return await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["callback"](request, options, sessionStore, cookies);
             case "csrf":
                 return render.csrf(csrfDisabled, options, cookies);
             case "error":
@@ -5119,7 +5045,7 @@ async function AuthInternal(request, authOptions) {
             case "providers":
                 return render.providers(options.providers);
             case "session":
-                return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$session$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["session"])(options, sessionStore, cookies);
+                return await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$session$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["session"](options, sessionStore, cookies);
             case "signin":
                 return render.signin(providerId, error);
             case "signout":
@@ -5127,7 +5053,7 @@ async function AuthInternal(request, authOptions) {
             case "verify-request":
                 return render.verifyRequest();
             case "webauthn-options":
-                return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$webauthn$2d$options$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["webAuthnOptions"])(request, options, sessionStore, cookies);
+                return await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$webauthn$2d$options$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["webAuthnOptions"](request, options, sessionStore, cookies);
             default:
         }
     } else {
@@ -5136,27 +5062,25 @@ async function AuthInternal(request, authOptions) {
             case "callback":
                 if (options.provider.type === "credentials") // Verified CSRF Token required for credentials providers only
                 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$oauth$2f$csrf$2d$token$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["validateCSRF"])(action, csrfTokenVerified);
-                return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["callback"])(request, options, sessionStore, cookies);
+                return await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["callback"](request, options, sessionStore, cookies);
             case "session":
                 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$oauth$2f$csrf$2d$token$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["validateCSRF"])(action, csrfTokenVerified);
-                return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$session$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["session"])(options, sessionStore, cookies, true, request.body?.data);
+                return await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$session$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["session"](options, sessionStore, cookies, true, request.body?.data);
             case "signin":
                 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$oauth$2f$csrf$2d$token$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["validateCSRF"])(action, csrfTokenVerified);
-                return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$signin$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["signIn"])(request, cookies, options);
+                return await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$signin$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["signIn"](request, cookies, options);
             case "signout":
                 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$oauth$2f$csrf$2d$token$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["validateCSRF"])(action, csrfTokenVerified);
-                return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$signout$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["signOut"])(cookies, sessionStore, options);
+                return await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$signout$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["signOut"](cookies, sessionStore, options);
             default:
         }
     }
     throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["UnknownAction"](`Cannot handle action: ${action}`);
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/index.js [app-rsc] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({});
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$cookie$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/cookie.js [app-rsc] (ecmascript)");
@@ -5166,15 +5090,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$actions$2f$callback$2f$oauth$2f$csrf$2d$token$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/actions/callback/oauth/csrf-token.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$symbols$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/symbols.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/index.js [app-rsc] (ecmascript) <locals>");
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/env.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({
-    "createActionURL": (()=>createActionURL),
-    "setEnvDefaults": (()=>setEnvDefaults)
+    "createActionURL": ()=>createActionURL,
+    "setEnvDefaults": ()=>setEnvDefaults
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$logger$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/logger.js [app-rsc] (ecmascript)");
 ;
@@ -5263,12 +5185,10 @@ function createActionURL(action, protocol, headers, envObject, config) {
     }
     return new URL(`${sanitizedUrl}/${action}`);
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/index.js [app-rsc] (ecmascript) <locals>": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 /**
  *
  * :::warning Experimental
@@ -5306,7 +5226,7 @@ var { g: global, __dirname } = __turbopack_context__;
  *
  * @module @auth/core
  */ __turbopack_context__.s({
-    "Auth": (()=>Auth)
+    "Auth": ()=>Auth
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$assert$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/assert.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
@@ -5410,12 +5330,10 @@ async function Auth(request, config) {
         return Response.redirect(url);
     }
 }
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/index.js [app-rsc] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 __turbopack_context__.s({});
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$assert$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/assert.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$errors$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/errors.js [app-rsc] (ecmascript)");
@@ -5427,12 +5345,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$utils$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/utils/actions.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$lib$2f$symbols$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/lib/symbols.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$40$2e$0$2f$node_modules$2f40$auth$2f$core$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/index.js [app-rsc] (ecmascript) <locals>");
-}}),
+}),
 "[project]/node_modules/.pnpm/@auth+core@0.40.0/node_modules/@auth/core/providers/credentials.js [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-var { g: global, __dirname } = __turbopack_context__;
-{
 /**
  * The Credentials provider allows you to handle signing in with arbitrary credentials,
  * such as a username and password, domain, or two factor authentication or hardware device (e.g. YubiKey U2F / FIDO).
@@ -5496,7 +5412,7 @@ var { g: global, __dirname } = __turbopack_context__;
  * ```
  * @see [Username/Password Example](https://authjs.dev/getting-started/authentication/credentials)
  */ __turbopack_context__.s({
-    "default": (()=>Credentials)
+    "default": ()=>Credentials
 });
 function Credentials(config) {
     return {
@@ -5509,7 +5425,7 @@ function Credentials(config) {
         options: config
     };
 }
-}}),
+}),
 
 };
 
