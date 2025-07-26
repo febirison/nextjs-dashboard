@@ -121,6 +121,8 @@ export async function authenticate(
 ) {
   try {
     await signIn("credentials", formData);
+    // Redirect to dashboard overview after successful login
+    redirect("/dashboard/(overview)");
   } catch (error) {
     if (error instanceof AuthError) {
       switch (error.type) {

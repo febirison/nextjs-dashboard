@@ -24,17 +24,17 @@ __turbopack_context__.s({
 });
 const authConfig = {
     pages: {
-        signIn: '/login'
+        signIn: "/login"
     },
     callbacks: {
         authorized ({ auth, request: { nextUrl } }) {
             const isLoggedIn = !!auth?.user;
-            const isOnDashboard = nextUrl.pathname.startsWith('/dashboard');
+            const isOnDashboard = nextUrl.pathname.startsWith("/dashboard");
             if (isOnDashboard) {
                 if (isLoggedIn) return true;
                 return false; // Redirect unauthenticated users to login page
             } else if (isLoggedIn) {
-                return Response.redirect(new URL('/dashboard', nextUrl));
+                return Response.redirect(new URL("/dashboard", nextUrl));
             }
             return true;
         }
@@ -56,8 +56,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$auth$2e$config$2e$ts__$5b$mi
 ;
 const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$auth$40$5$2e$0$2e$0$2d$beta$2e$29_nex_40f57b0894a464a2444e5d0cba2571c2$2f$node_modules$2f$next$2d$auth$2f$index$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$auth$2e$config$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["authConfig"]).auth;
 const config = {
+    // https://nextjs.org/docs/app/building-your-application/routing/middleware#matcher
     matcher: [
-        '/((?!api|_next/static|_next/image|.*\\.png$).*)'
+        "/((?!api|_next/static|_next/image|.*\\.png$).*)"
     ]
 };
 }),
